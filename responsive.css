@@ -1,0 +1,56 @@
+@media only screen and (max-width: 900px){
+    
+     header .check-btn{
+        display: block;
+    }
+
+    #click:checked~.check-btn i:before{
+        content:"\f00d";
+    }
+    .navlist ul {
+        position: fixed;
+        top: 95px;
+        left: -100%;
+        background: rgba(45, 44, 44, 0.912);
+        /* height: 90vh; */
+       width:45%;
+        display: block;
+        text-align: center;
+        transition: all ease 0.3s;
+        z-index: 222;
+    }
+    
+
+   #click:checked~ .navlist ul{
+        left:0%;
+    }
+    .navlist ul li {
+        margin: 40px 0px;
+    }
+
+    .navlist ul li a {
+        color: white;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    /* .navlist ul li a:hover,
+    .navlist ul li a.active {
+        color:cyan;
+        background: none;
+    } */
+}
+/* @media only screen and (max-width: 530px){
+    .team-members img {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+} */
+
+@media only screen and (max-width:720px){
+    .info{
+        flex-direction: column;
+    }  
+}
+
